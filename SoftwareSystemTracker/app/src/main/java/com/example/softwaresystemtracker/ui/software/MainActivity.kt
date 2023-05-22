@@ -1,7 +1,8 @@
-package com.example.softwaresystemtracker
+package com.example.softwaresystemtracker.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.softwaresystemtracker.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
