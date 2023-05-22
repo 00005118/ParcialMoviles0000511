@@ -1,4 +1,4 @@
-package com.example.softwaresystemtracker.ui
+package com.example.softwaresystemtracker.ui.software
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:app="http://schemas.android.com/apk/res-auto"
-             android:id="@+id/nap_grap">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nap_grap"
+    app:startDestination="@id/catalogFragment">
 
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="com.example.softwaresystemtracker.ui.software.catalog.CatalogFragment"
+        android:label="fragment_catalog"
+        tools:layout="@layout/fragment_catalog" >
+        <action
+            android:id="@+id/action_catalogFragment_to_newSoftwareFragment"
+            app:destination="@id/newSoftwareFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newSoftwareFragment"
+        android:name="com.example.softwaresystemtracker.ui.software.NewSoftwareFragment"
+        android:label="fragment_new_software"
+        tools:layout="@layout/fragment_new_software" />
 </navigation>

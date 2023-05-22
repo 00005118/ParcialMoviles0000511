@@ -1,4 +1,7 @@
 package com.example.softwaresystemtracker.data
 
-class SoftwareModel {
-}
+data class SoftwareModel (
+    val name: String,
+    val service: String,
+    val Description: String
+        )
