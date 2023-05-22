@@ -22,5 +22,8 @@ class SoftwareRecyclerViewAdapter (private val clickListener: (SoftwareModel) ->
         val software = softwares[position]
         holder.bind(software, clickListener)
     }
-
+    fun setData(softwareList: List<SoftwareModel>){
+        softwares.clear() //Limpia la lista para evitar tener elementos repjetido o inecesarios
+        softwares.addAll(softwareList)
+    }
 }
